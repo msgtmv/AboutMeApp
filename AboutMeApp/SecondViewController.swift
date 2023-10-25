@@ -16,9 +16,4 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         greetingLabel.text = "Welcome, \(userName ?? "User")!"
     }
-    
-//    @IBAction func logOutButtonDidTapped() {
-//        dismiss(animated: true)
-//    }
-    
 }

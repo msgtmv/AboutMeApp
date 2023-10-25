@@ -25,8 +25,8 @@
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="wrongNameOrPasswordSet" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3m-Ko-7Qy"/>
-                                    <segue destination="3UC-YY-ZUT" kind="presentation" modalPresentationStyle="fullScreen" id="oad-Tg-2Xz"/>
+                                    <action selector="signInButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="j3m-Ko-7Qy"/>
+                                    <segue destination="3UC-YY-ZUT" kind="presentation" identifier="segueToSecondVC" modalPresentationStyle="fullScreen" id="oad-Tg-2Xz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="210-fs-xgq">
@@ -123,6 +123,9 @@
                                         <state key="normal" title="Log Out">
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="DtY-Aq-iST" kind="unwind" unwindAction="unwindFor:" id="axb-Vb-ywo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -140,6 +143,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5G-PY-nCU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DtY-Aq-iST" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="315" y="5.28169014084507"/>
         </scene>

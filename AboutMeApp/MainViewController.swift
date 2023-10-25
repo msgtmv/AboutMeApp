@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
         alert.addAction(alertAction)
         present(alert, animated: true)
     }
-    @IBAction func wrongNameOrPasswordSet() {
+    @IBAction func signInButtonDidTapped() {
         let alert = UIAlertController(
             title: "Invalid username or password",
             message: "Please, enter correct username and password",
@@ -47,9 +47,10 @@ class MainViewController: UIViewController {
         let alertAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(alertAction)
         
-        if userNameTF.text != "User" || passwordTF.text != "123" {
+        if userNameTF.text == "User" || passwordTF.text == "123" {
+            performSegue(withIdentifier: "segueToSecondVC", sender: self)
+        } else {
             present(alert, animated: true)
-            passwordTF.text = ""
         }
     }
     @IBAction func unwind(for segue: UIStoryboardSegue) {
