@@ -12,8 +12,8 @@ class MainViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let username = "User"
-    private let password = "123"
+    private let username = User.getUserData().userName
+    private let password = User.getUserData().password
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let secondVC = segue.destination as? WelcomeViewController else { return }

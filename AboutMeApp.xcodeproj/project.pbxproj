@@ -13,7 +13,7 @@
 		F60978FE2AE7EAB200361846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60978FC2AE7EAB200361846 /* Main.storyboard */; };
 		F60979002AE7EAB400361846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60978FF2AE7EAB400361846 /* Assets.xcassets */; };
 		F60979032AE7EAB400361846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60979012AE7EAB400361846 /* LaunchScreen.storyboard */; };
-		F64817BE2AF41C240025C8D7 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817BD2AF41C240025C8D7 /* UserModels.swift */; };
+		F619D7472AF50EF2002F0EBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619D7462AF50EF2002F0EBE /* User.swift */; };
 		F64817C22AF4301F0025C8D7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817C12AF4301F0025C8D7 /* TabBarViewController.swift */; };
 		F64817C42AF431F90025C8D7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817C32AF431F90025C8D7 /* UserViewController.swift */; };
 		F64817C62AF4342C0025C8D7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817C52AF4342C0025C8D7 /* BioViewController.swift */; };
@@ -29,7 +29,7 @@
 		F60978FF2AE7EAB400361846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F60979022AE7EAB400361846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F60979042AE7EAB400361846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F64817BD2AF41C240025C8D7 /* UserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
+		F619D7462AF50EF2002F0EBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F64817C12AF4301F0025C8D7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F64817C32AF431F90025C8D7 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		F64817C52AF4342C0025C8D7 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		F64817BC2AF41BE90025C8D7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F64817BD2AF41C240025C8D7 /* UserModels.swift */,
+				F619D7462AF50EF2002F0EBE /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,9 +187,9 @@
 			files = (
 				F64817C42AF431F90025C8D7 /* UserViewController.swift in Sources */,
 				F6BEDD912AE8014200D16F35 /* WelcomeViewController.swift in Sources */,
-				F64817BE2AF41C240025C8D7 /* UserModels.swift in Sources */,
 				F64817C62AF4342C0025C8D7 /* BioViewController.swift in Sources */,
 				F60978FB2AE7EAB200361846 /* MainViewController.swift in Sources */,
+				F619D7472AF50EF2002F0EBE /* User.swift in Sources */,
 				F60978F72AE7EAB200361846 /* AppDelegate.swift in Sources */,
 				F64817C22AF4301F0025C8D7 /* TabBarViewController.swift in Sources */,
 				F60978F92AE7EAB200361846 /* SceneDelegate.swift in Sources */,

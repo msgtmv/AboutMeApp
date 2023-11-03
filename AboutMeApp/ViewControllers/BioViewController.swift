@@ -9,6 +9,8 @@ import UIKit
 
 class BioViewController: UIViewController {
 
+    @IBOutlet var descriptionLabel: UILabel!
+    
     private let primaryColor = UIColor(
         red: 210/255,
         green: 109/255,
@@ -24,9 +26,12 @@ class BioViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.adVerticalGradientLayer(
             topColor: primaryColor,
             bottomColor: secondaryColor
         )
+        
+        descriptionLabel.text = User.getUserData().person.description
     }
 }

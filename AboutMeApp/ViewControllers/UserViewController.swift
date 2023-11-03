@@ -10,6 +10,11 @@ import UIKit
 class UserViewController: UIViewController {
 
     @IBOutlet var userImageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var cityLabel: UILabel!
+    @IBOutlet var educationLabel: UILabel!
+    @IBOutlet var occupationLabel: UILabel!
     
     private let primaryColor = UIColor(
         red: 210/255,
@@ -24,6 +29,8 @@ class UserViewController: UIViewController {
         alpha: 1
     )
     
+    private let user = User.getUserData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +39,11 @@ class UserViewController: UIViewController {
             bottomColor: secondaryColor
         )
         
+        nameLabel.text = user.person.name
+        surnameLabel.text = user.person.surname
+        cityLabel.text = user.person.city
+        educationLabel.text = user.person.education
+        occupationLabel.text = user.person.occupation
         
         userImageView.layer.cornerRadius = userImageView.frame.width / 2
     }
